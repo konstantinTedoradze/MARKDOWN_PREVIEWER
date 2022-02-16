@@ -1,38 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #87b5b5;
+}
+
+.wrap-editor {
+  width: 40%;
+  height: 40vh;
+  margin: 50px auto;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+}
+
+.wrap-preview {
+  width: 50%;
+  margin: 50px auto;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+}
+
+.toolbar {
+  background-color: #4aa3a3;
+  border: 2px solid black;
+  border-bottom: 1px solid black;
+  padding: 6px 15px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-free-code-camp {
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#editor {
+  width: 100%;
+  height: 92%;
+  background: #c0d8d8;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  resize: vertical;
+  border: 2px solid black;
 }
+
+#preview {
+  width: 100%;
+  display: inline-block;
+  background: #c0d8d8;
+  border: 2px solid black;
+  text-align: left;
+  padding: 0 10px;
+}
+
+img {
+  width: 90%;
+}
+
+#editor-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#editor-button:hover .fa {
+  color:aqua;
+}
+
+
+
+/* pre {
+  background-color: white;
+  padding-left: 0;
+} */
